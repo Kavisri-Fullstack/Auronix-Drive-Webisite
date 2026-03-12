@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Auronix Drive</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Cursor Animation-->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!--Navbar-->
+    <nav class="navbar" id="navbar">
+        <h1>Auronix Drive</h1>
+        <ul class="navbar-nav" id="navList">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="model.html">Models</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="btn">
+            <button>Login</button>
+            <button>Sign in</button>
+        </div>
+    </nav>
+
+    <!--Features Hero-->
+    <section class="features-hero">
+        <h1>ENGINEERED PERFECTION</h1>
+    </section>
+
+    <!--Sats Section-->
+    <section class="features-stats">
+        <div class="stat-item">
+            <span class="stat-number">0-60</span>
+            <h3>2.8s</h3>
+        </div>
+
+        <div class="stat-item">
+            <span class="stat-number">650</span>
+            <h3>Horsepower</h3>
+        </div>
+
+        <div class="stat-item">
+            <span class="stat-number">320</span>
+            <h3>Miles Range</h3>
+        </div>
+
+        <div class="stat-item">
+            <span class="stat-number">0.21</span>
+            <h3>Cd Drag</h3>
+        </div>
+    </section>
+
+    <!--Features Grid-->
+    <section class="features-grid">
+        <div class="feature-card">
+            <span class="feature-icon"><i class="fa-solid fa-bolt"></i></span>
+            <h3>Quantum Electric Power</h3>
+            <p>Instant torque delivery with dual-motor AWD. 650hp surges from 0-60 in just 2.8 seconds, redefining acceleration physics.</p>
+        </div>
+
+        <div class="feature-card">
+            <span class="feature-icon"><i class="fa-solid fa-shield-halved"></i></span>
+            <h3>Neural Safety Matrix</h3>
+            <p>AI-driven collision avoidance with 360&deg quantum radar. Predicts dangers 3 seconds ahead with 99.9% accuracy.</p>
+        </div>
+
+        <div class="feature-card">
+            <span class="feature-icon"><i class="fas fa-brain"></i></span>
+            <h3>Holographic AI Cockpit</h3>
+            <p>Augmented reality heads-up display with gesture control. Your car thinks faster than you drive.</p>
+        </div>
+
+        <div class="feature-card">
+            <span class="feature-icon"><i class="fas fa-plane"></i></span>
+            <h3>AeroBlade Dynamics</h3>
+            <p>Active aerodynamic surfaces adjust 1000x per second. Lowest drag coefficient (0.21 Cd) in production cars.</p>
+        </div>
+
+        <div class="feature-card">
+            <span class="feature-icon"><i class="fas fa-music"></i></span>
+            <h3>Spatial Symphony Audio</h3>
+            <p>32-speaker 360&deg sound dome with haptic seats. Feel Beethoven's 5th symphony through your entire body.</p>
+        </div>
+
+        <div class="feature-card">
+            <span class="feature-icon"><i class="fas fa-meteor"></i></span>
+            <h3>Adaptive Crystal Interior</h3>
+            <p>Mood-responsive materials shift colors and textures. Sustainable luxury that evolves with you.</p>
+        </div>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+    <script>
+        //highligh active page
+        const currentPage=window.location.pathname.split('/').pop() || 'index.html';
+
+        document.querySelectorAll(".navbar-nav a").forEach(link=>{
+            if(link.getAttribute('href')===currentPage){
+                link.style.color='#0ea5e9';
+                link.style.fontWeight='700';
+            }
+        });
+    </script>
+</body>
+</html>

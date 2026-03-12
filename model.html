@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Models - Auronix Drive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="model.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <!--Cursor Animation-->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!--Navbar-->
+    <nav class="navbar" id="navbar">
+        <h1>Auronix Drive</h1>
+        <ul class="navbar-nav" id="navList">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="model.html">Models</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="btn">
+            <button>Login</button>
+            <button>Sign in</button>
+        </div>
+    </nav>
+
+    <!--Model Hero-->
+    <section class="models-hero">
+        <div>
+            <h1>CHOOSE YOUR LEGEND</h1>
+            <p class="section-subtitle" style="font-size: 1.5rem;  margin-top:1rem;">Three models. Infinite possibilities.</p>
+        </div>
+    </section>
+
+    <!--Models Grid-->
+    <div class="models-container">
+        <div class="models-grid">
+            <div class="model-card">
+                <div class="model-image"></div>
+                <div class="model-content">
+                    <span class="model-badge">BASE</span>
+                    <h2 class="model-title">Auronix S</h2>
+                    <div class="model-specs">
+                        <div class="spec-item">
+                            <span class="spec-icon"><i class="fa-solid fa-bolt"></i></span>
+                            <span>1,020 hp</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon"><i class="fa-solid fa-rocket"></i></span>
+                            <span>1.9s 0-60</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon"><i class="fa-solid fa-battery-full"></i></span>
+                            <span>350 mi range</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon"><i class="fa-solid fa-bullseye"></i></span>
+                            <span>2,300 lbs</span>
+                        </div>
+                    </div>
+                    <div class="model-price">$189,900</div>
+                    <button class="model-cta">RESERVE</button>
+                </div>
+            </div>    
+        </div>
+
+        <!--Comparison Table-->
+        <div class="comparison-table">
+            <h2 style="text-align: center; font-size: 3rem; margin-bottom: 2rem;">SPEC COMPARISON</h2>
+            <div class="comparison-grid">
+                <div class="comparison-header">SPEC</div>
+                <div class="comparison-header">AURONIX S</div>
+                <div class="comparison-header">AURONIX X</div>
+                <div class="comparison-header">AURONIX R</div>
+
+                <div>Horsepower</div>
+                <div>450 hp</div>
+                <div>650 hp</div>
+                <div>1,020 hp</div>
+
+                <div>0-60 MPH</div>
+                <div>3.2s</div>
+                <div>2.8s</div>
+                <div>1.9s</div>
+
+                <div>Range</div>
+                <div>280 mi</div>
+                <div>320 mi</div>
+                <div>350 mi</div>
+
+                <div>Starting Price</div>
+                <div>$89,900</div>
+                <div>$119,900</div>
+                <div>$189,900</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        //Highlisht active page
+        const currentPage=window.location.pathname.split('/').pop() || 'home.html'
+        document.querySelectorAll('.navbar-nav a').forEach(link =>{
+            if(link.getAttribute('href')===currentPage){
+                link.style.color='#0ea5e9';
+                link.style.fontWeight='700';
+            }
+        });
+    </script>
+</body>
+</html>
