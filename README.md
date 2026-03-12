@@ -1,11 +1,6 @@
 # 🚀 Auronix Drive - Premium Electric Car Website
 
-![Hero Preview](https://via.placeholder.com/1200x600/0a0a0a/0ea5e9?text=Auronix+Drive)
-
 My **first frontend website** - a futuristic electric vehicle showcase built with modern web technologies!
-
-## ✨ **Live Demo**
-[![Deployed Site](https://img.shields.io/badge/Live-0ea5e9?style=for-the-badge&logo=github)](YOUR_GITHUB_PAGES_LINK)
 
 ## 🎯 **Features**
 - 🖱️ Custom animated cursor
@@ -26,4 +21,4 @@ My **first frontend website** - a futuristic electric vehicle showcase built wit
 # Clone repo
 git clone https://github.com/Kavisri-Fullstack/Auronix-Drive-Webisite/tree/main
 
-# Open index.html in browser
+# Open home.html in browser
